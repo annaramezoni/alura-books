@@ -20,9 +20,6 @@
 .container__button {
     display: none;
 }
-.container__image {
-    /* margin-right:8px; */
-}
 .menu__list {
     display: none;
     position: absolute;
