@@ -8,11 +8,14 @@
 
 :root {
     --background-color: #EBECEE;
+    --background-color2: #F9F9F9;
     --color-white: #fff;
     --color-orange: #EB9B00;
     --color-gradient: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
     --color-blue: #002F52;
     --color-black: rgba(0, 0, 0, 0.85);
+    --color-grey-item: #474646;
+    --color-grey-title: #858585;
 
     --main-font: "Poppins", sans-serif;
     --second-font: "Josefin Sans", sans-serif;

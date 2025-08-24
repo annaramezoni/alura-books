@@ -1,6 +1,41 @@
+.footnote {
+    background-color: var(--background-color2);
+}
 hr {
     margin: 0;
 }
-p {
-    margin: 1em 0 2em 2em;
+
+/*out of @media*/
+.footnote__list {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .footnote {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3em;
+    }
+    .footnote__title {
+        font-size: 1.5rem;
+    }
+    .footnote__list {
+        display: block;
+    }
+    .footnote__list__item {
+        display: flex;
+        align-items: center;
+        margin: 0.5em 0;
+    }
+    .footnote__list__title {
+        color: var(--color-grey-title);
+        text-transform: uppercase;
+    }
+    .footnote__list__link {
+        text-decoration: none;
+        color: var(--color-grey-item);
+        margin-left: 0.5em;
+    }
+
 }

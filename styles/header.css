@@ -1,0 +1,110 @@
+.heading {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* padding: 16px 24px; */
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    margin-right: 0.5em;  
+}
+.container__button {
+    display: none;
+}
+.heading__buger-menu { /* a escolha do background image é devido ao fato de não poder mudar a cor de fundo sem JS no caso de ter utilizado a tag img no html*/
+    width: 48px;
+    height: 48px;
+    background-image: url(../Images/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-left: 0.5em;
+}
+.container__image {
+    padding: 1em 0;
+}
+.menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* left: 0; */
+    background-color: var(--color-white);
+    width: 65vw;
+}
+.container__button:checked~.menu__list {
+    display: block;
+}
+.menu__list__title,
+.menu__list__link {
+   padding: 1em;
+   display: block;
+   text-decoration: none;
+}
+.menu__list__title {
+    font-weight: 700;
+    color: var(--color-orange);
+}
+.menu__list__link {
+    background: var(--color-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*values out of @media*/
+.container__title {
+    display: none;
+}
+.options {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .heading {
+        padding: 0 3.5em;
+    }
+    .container__title,
+    .container__title__bold {
+        font-family: var(--second-font);
+        font-size: 1.9rem;
+    }
+    .container__title {
+        font-weight: 400;
+        display: block;
+    }
+    .container__title__bold {
+        font-weight: 700;
+    }
+    .options {
+        display: flex;
+        align-items: center;
+    }
+    .options__item {
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 0 1.5em;
+    }
+    .options__link {
+        text-decoration: none;
+        color: black;
+    }
+    .container__image__transparent {
+        display: none;
+    }
+    .heading__buger-menu {
+        display: none;
+    }
+    .options__categories__menu:checked ~ .menu__list {
+        display: block;
+        width: auto;
+        z-index: 10;
+    }
+    .options__categories__menu {
+        display: none;
+    }
+}

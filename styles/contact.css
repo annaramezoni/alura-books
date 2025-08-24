@@ -10,6 +10,10 @@
     background-clip: text;
     margin-bottom: 0.5em;
 }
+.contact__tile {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 .contact__text {
     font-weight: 300;
     line-height: normal;
@@ -23,10 +27,32 @@
     padding: 0.6em 1.5em;
     color: var(--color-blue);
 }
-#contact__email::placeholder {
+.contact__email::placeholder {
     font-family: var(--main-font);
     color: var(--color-blue);
     padding-left: 2em;
     text-align: left;
-    background: url("../Images/Email.svg") no-repeat;
+    background: url("../Images/Email.svg") no-repeat left center;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .contact__info {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    .contact__title {
+        font-size: 1.5rem;
+    }
+    .contact__email {
+        width: 30%;
+        padding:1em;
+    }
 }
