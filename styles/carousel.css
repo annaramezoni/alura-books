@@ -41,6 +41,10 @@
     color: var(--color-orange);
     padding-bottom: 0.5em;
 }
+.description__title__paragraph {
+        font-size: 1.1rem;
+}
+
 .description__title-photo {
     font-size: 1.12em;
     font-weight: 700;
@@ -75,7 +79,6 @@
     line-height: 48px;
 }
 
-
 /* ---- best-selling card ---- */
 
 .description__stars {
@@ -93,7 +96,7 @@
         padding: 2em 0 0.8em 0;
     }
     .swiper-pagination {
-        padding: 0.5em 0 2em 0;
+        margin: 1em 0 2em 0;
     }
     .swiper {
         width: 70%;
@@ -107,5 +110,31 @@
         width: 50%;
         margin: 3em auto;
     }
+    
+}
 
+@media screen and (min-width: 1728px) {
+
+    .carousel__title {
+        font-size: 2rem;
+    }
+    .swiper-pagination {
+        margin: 0em 0em 1em 0;
+    }
+    .swiper-and-card__wrapper {
+        display: flex;
+        align-items: center;
+        padding: 1em 10% 2.5em 10%;
+        gap: 5em;
+    }
+    .swiper {
+        width: 45%;
+    }
+    .card {
+        margin-top: 4em;
+        width: 55%;
+    }  
+    .description__title {
+        font-size: 2rem;
+    }  
 }

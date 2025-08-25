@@ -50,9 +50,24 @@
     }
     .contact__title {
         font-size: 1.5rem;
+        font-weight: 500;;
     }
     .contact__email {
         width: 30%;
+        padding:1em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .contact {
+        padding: 3em 27vw;
+    }
+    .contact__info {
+        width: auto;
+    }
+    .contact__email {
+        width: 50%;
         padding:1em;
     }
 }

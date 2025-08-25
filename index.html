@@ -13,7 +13,7 @@
     <header class="heading">
         <div class="container">
             <input type="checkbox" id="menu" class="container__button">
-            <label for="menu">
+            <label class="container__label" for="menu">
                     <span class="heading__buger-menu container__image"></span>
             </label>
             <ul class="menu__list">
@@ -40,23 +40,23 @@
 
         <ul class="options">
             <input type="checkbox" id="option__menu" class="options__categories__menu">
-            <label for="option__menu" class="options__categories__list">
+            <label for="option__menu" class="options__label">
                 <li class="options__item">Categorias</li>
             </label>   
             <ul class="menu__list">
-                <li>
+                <li class="menu__list__item">
                     <a href="#" class="menu__list__link">PROGRAMAÇÃO</a>
                 </li>
-                <li>
+                <li class="menu__list__item">
                     <a href="#" class="menu__list__link">FRONT-END</a>
                 </li>
-                <li>
+                <li class="menu__list__item">
                     <a href="#" class="menu__list__link">INFRAESTRUTURA</a>
                 </li>
-                <li>
+                <li class="menu__list__item">
                     <a href="#" class="menu__list__link">BUSINESS</a>
                 </li>
-                <li>
+                <li class="menu__list__item">
                     <a href="#" class="menu__list__link">DESIGN & UX</a>
                 </li>
             </ul>         
@@ -65,8 +65,16 @@
         </ul>
         <div class="container">
             <a href="#"><img src="/Images/Favoritos.svg" alt="favoritos" class="container__image container__image__transparent"></a>
-            <a href="#"><img src="/Images/Compras.svg" alt="minha sacola" class="container__image"></a>
-            <a href="#"><img src="/Images/Usuário.svg" alt="meu perfil" class="container__image"></a>
+            <a class="container__link" href="#">
+                <img src="/Images/Compras.svg" alt="minha sacola" class="container__image">
+                <p class="container__text">Minha sacola</p>
+            </a>
+            
+            <a class="container__link" href="#">
+                <img src="/Images/Usuário.svg" alt="meu perfil" class="container__image">
+                <p class="container__text">Meu perfil</p>
+            </a>
+            
         </div>    
     </header>
     <section class="banner">
@@ -78,84 +86,90 @@
     </section>
     <section class="carousel">
         <h2 class="carousel__title">ÚLTIMOS LANÇAMENTOS</h2>
-        <div class="swiper">
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="/Images/Acessibilidade.svg" alt="image from book cover - Acessibilidade na Web"> </div>
-                <div class="swiper-slide"><img src="/Images/Javascript.svg" alt="image from book cover - JavaScript Acertivo"> </div>
-                <div class="swiper-slide"><img src="/Images/Liderança.svg" alt="image from book cover - Liderança em Design"></div>
-                <div class="swiper-slide"><img src="/Images/Gestão.svg" alt="image from book cover - Gestão de Produtos"></div>
-                <div class="swiper-slide"><img src="/Images/MEAN.svg" alt="image from book cover - MEAN"></div>
-                <div class="swiper-slide"><img src="/Images/Tuning.svg" alt="image from book cover - Tuning de SQL"></div>
-            </div>
+        <div class="swiper-and-card__wrapper">
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>            
-        </div>
-
-        <div class="card">
-            <div class="card__description">
-                <div class="description__text">
-                    <h3 class="description__title">Talvez você também se interesse por...</h3>
-                    <h2 class="description__title-photo">Angular 11 e Firebase</h2>
-                    <p class="description__paragraph">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/Images/Acessibilidade.svg" alt="image from book cover - Acessibilidade na Web"> </div>
+                    <div class="swiper-slide"><img src="/Images/Javascript.svg" alt="image from book cover - JavaScript Acertivo"> </div>
+                    <div class="swiper-slide"><img src="/Images/Liderança.svg" alt="image from book cover - Liderança em Design"></div>
+                    <div class="swiper-slide"><img src="/Images/Gestão.svg" alt="image from book cover - Gestão de Produtos"></div>
+                    <div class="swiper-slide"><img src="/Images/MEAN.svg" alt="image from book cover - MEAN"></div>
+                    <div class="swiper-slide"><img src="/Images/Tuning.svg" alt="image from book cover - Tuning de SQL"></div>
                 </div>
-                <img class="description__image" src="/Images/Angular.svg" alt="Angular image">
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>            
             </div>
-            <div class="card__buttons">
-                <div class="buttons__icons">
-                    <img class="card__icon" src="/Images/favourites.svg">
-                    <img class="card__icon" src="/Images/bag.svg">
+
+            <div class="card">
+                <div class="card__description">
+                    <div class="description__text">
+                        <h3 class="description__title">Talvez você também se interesse por...</h3>
+                        <h2 class="description__title-photo">Angular 11 e Firebase</h2>
+                        <p class="description__paragraph">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img class="description__image" src="/Images/Angular.svg" alt="Angular image">
                 </div>
-                <a class="buttons__ancora">Saiba mais</a>
+                <div class="card__buttons">
+                    <div class="buttons__icons">
+                        <img class="card__icon" src="/Images/favourites.svg">
+                        <img class="card__icon" src="/Images/bag.svg">
+                    </div>
+                    <a class="buttons__ancora">Saiba mais</a>
+                </div>
             </div>
-        </div>
+        </div> <!--end of swiper-and-card__wrapper-->
     </section>
     
     <!-- 2nd caroulsel -->
     <section class="carousel">
         <h2 class="carousel__title">MAIS VENDIDOS</h2>
-        <div class="swiper">
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="/Images/Liderança.svg" alt="image from book cover - Liderança em Design"></div>
-                <div class="swiper-slide"><img src="/Images/Acessibilidade.svg" alt="image from book cover - Acessibilidade na Web"> </div>
-                <div class="swiper-slide"><img src="/Images/Javascript.svg" alt="image from book cover - JavaScript Acertivo"> </div>
-                <div class="swiper-slide"><img src="/Images/Gestão.svg" alt="image from book cover - Gestão de Produtos"></div>
-                <div class="swiper-slide"><img src="/Images/MEAN.svg" alt="image from book cover - MEAN"></div>
-                <div class="swiper-slide"><img src="/Images/Tuning.svg" alt="image from book cover - Tuning de SQL"></div>
+        <div class="swiper-and-card__wrapper">
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/Images/Liderança.svg" alt="image from book cover - Liderança em Design"></div>
+                    <div class="swiper-slide"><img src="/Images/Acessibilidade.svg" alt="image from book cover - Acessibilidade na Web"> </div>
+                    <div class="swiper-slide"><img src="/Images/Javascript.svg" alt="image from book cover - JavaScript Acertivo"> </div>
+                    <div class="swiper-slide"><img src="/Images/Gestão.svg" alt="image from book cover - Gestão de Produtos"></div>
+                    <div class="swiper-slide"><img src="/Images/MEAN.svg" alt="image from book cover - MEAN"></div>
+                    <div class="swiper-slide"><img src="/Images/Tuning.svg" alt="image from book cover - Tuning de SQL"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>            
             </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>            
-        </div>
-
-        <div class="card">
-            <div class="card__description">
-                <div class="description__text">
-                    <span class="description__stars"></span>
-                    <h3 class="description__title">Autora do Mês</h3>
-                     <h2 class="description__title-photo">Juliana Agarikov</h2>
-                    <p class="description__paragraph">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+            <div class="card">
+                <div class="card__description">
+                    <div class="description__text">
+                        <span class="description__stars"></span>
+                        <h3 class="description__title">Autora do Mês</h3>
+                        <h2 class="description__title-photo">Juliana Agarikov</h2>
+                        <p class="description__paragraph">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    </div>
+                    <img class="description__image" src="/Images/Perfil-escritora 1.png" alt="Angular image">
                 </div>
-                <img class="description__image" src="/Images/Perfil-escritora 1.png" alt="Angular image">
-            </div>
-            <div class="card__buttons">
-                <div class="buttons__icons">
-                    <img class="card__icon" src="/Images/favourites.svg">
-                    <img class="card__icon" src="/Images/bag.svg">
+                <div class="card__buttons">
+                    <div class="buttons__icons">
+                        <img class="card__icon" src="/Images/favourites.svg">
+                        <img class="card__icon" src="/Images/bag.svg">
+                    </div>
+                    <a class="buttons__ancora">Saiba mais</a>
                 </div>
-                <a class="buttons__ancora">Saiba mais</a>
             </div>
         </div>
     </section>
@@ -285,7 +299,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            spaceBetween: 60,
+            spaceBetween: 10,
             slidesPerView: 3,
             pagination: {
                 el: '.swiper-pagination',

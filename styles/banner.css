@@ -43,9 +43,24 @@
         font-size: 2.25rem;
     }
     .banner__search {
-    width: 50%;
+        width: 50%;
     }
     .banner__search::placeholder {
         background-position: 6em center;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .banner {
+        padding: 5em 1.5em;
+    }
+    .banner__search {
+        width: 36%;
+        padding: 1.4em;
+    }
+    .banner__search::placeholder {
+        font-size: 1rem;
+        background-position: 7em center;
     }
 }

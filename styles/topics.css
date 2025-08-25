@@ -26,11 +26,21 @@
 }
 @media screen and (min-width: 1024px) {
 
+    .topics__title {
+        font-weight: 500;
+    }
     .topics__title,
     .list__link {
         font-size: 1.5rem;
     }
     .list__items {
     padding: 1.5em 2em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    
+    .topics {
+        padding: 3em 25vw;
     }
 }
