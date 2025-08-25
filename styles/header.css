@@ -100,7 +100,15 @@
         text-transform: uppercase;
         padding: 1.5em;
     }
-    .menu__list__item:hover {
+    .options__item:hover {
+        background: var(--color-gradient);
+        color: var(--color-white);
+    }
+    .options__item:hover > .options__link {
+        /* background: var(--color-gradient); */
+        color: var(--color-white);
+    }
+        .menu__list__item:hover {
         background: var(--color-gradient);
     }
     .menu__list__item:hover > .menu__list__link {
